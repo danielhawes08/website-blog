@@ -19,7 +19,15 @@
     <nav>
         <!-- Title -->
         <div class="left">
-            <a href="/">Daniel Hawes</a>
+            <a href="/" class="name">Daniel Hawes</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">University Projects</a>
+                    <a href="#">Personal Projects</a>
+                    <a href="#">Adventures</a>
+                </div>
+            </div>
         </div>
 
         <!-- External Links -->
@@ -130,20 +138,24 @@
 
         <!-- SECTION 4: Contact -->
         <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
             <div class="group">
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium voluptatibus provident voluptatem architecto repellendus tempora temporibus dolore ut! Repellendus quo quis dolorem eius perferendis, sunt debitis ea possimus ducimus, consectetur explicabo ipsum quae obcaecati, rerum minima alias! Eveniet laudantium magni sunt placeat illum temporibus vel numquam omnis repellat. Quas fugiat tempore voluptatum, quos animi qui non magni perferendis similique illum! Consequuntur sunt dignissimos dicta quos accusamus laudantium cumque, quod odio ipsum ea labore. Vero placeat provident alias iste vitae.
+                    Feel free to contact me about anything! I'm happy to help out with projects or answer any personal questions you may have. I'd also love to hear if you have any recommendations or advice for improvement of the site or projects!
                 </div>
 
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <input type="hidden" name="access_key" value="8e8bb2f5-ea96-4511-8af3-2ee86612317b">
+
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
                     
                     <button type="submit">Send Message</button>
                 </form>
@@ -151,5 +163,9 @@
         </section>
 
     </main>
+
+<script>
+
+</script>
 </body>
 </html>
