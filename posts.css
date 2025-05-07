@@ -114,76 +114,96 @@ nav .right a span {
     margin: 0 5px;
 }
 
-main {
-    margin-top: 70px;
-    padding: 20px 50px;
+/* POST */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 70px 0;
+    padding: 20px 250px;
 }
 
-main .intro h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-
-main .intro p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-main .articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 300px;
-}
-
-article {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-article h3 {
-    margin: 10px 0;
-}
-
-article p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-article a {
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-
-.post {
-    max-width: 700px;
-    margin: 40px auto;
-    background: white;
+main.report {
+    margin: 20px auto;
     padding: 20px;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.post img {
+h1, h2 {
+    color: #222;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+table {
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-.post a {
-    display: block;
-    margin-top: 20px;
-    color: blue;
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+@media (max-width: 850px) {
+    body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 628px) {
+    /*  NAVBAR */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+
+     
 }

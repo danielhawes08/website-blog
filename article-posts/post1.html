@@ -4,16 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1: Machine Learning Model</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../posts.css">
+    <script src="../scripts.js" defer></script>
 </head>
 <body>
+    <div id="navbar"></div>
+    <main class="report">
+        <!-- Title Section -->
+        <header>
+            <h1>Deep Learning Python Autoencoder</h1>
+            <p><strong>Author:</strong> Daniel Hawes</p>
+            <p><strong>Date:</strong> October 2023</p>
+        </header>
 
-    <article class="post">
-        <h2>Project 1: Machine Learning Model</h2>
-        <img src="images/project1.jpg" alt="Project 1 Thumbnail">
-        <p>This is the full blog post content about the Machine Learning Model...</p>
-        <a href="index.html">Back to Blog</a>
-    </article>
+        <!-- Abstract Section -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                This report outlines the development and implementation of a deep learning autoencoder using Python. The project focuses on dimensionality reduction and data reconstruction, with applications in anomaly detection and image compression.
+            </p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Autoencoders are a type of artificial neural network used to learn efficient representations of data. This project explores the design and training of an autoencoder for image compression, leveraging Python and TensorFlow.
+            </p>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <p>
+                The methodology involves the following steps:
+            </p>
+            <ol>
+                <li>Data preprocessing and normalization.</li>
+                <li>Designing the autoencoder architecture.</li>
+                <li>Training the model using a dataset of images.</li>
+                <li>Evaluating the performance using reconstruction error metrics.</li>
+            </ol>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Results</h2>
+            <figure>
+                <img src="../images/autoencoder-results.webp" alt="Autoencoder Results">
+                <figcaption>Figure 1: Reconstruction results of the autoencoder.</figcaption>
+            </figure>
+            <p>
+                The autoencoder successfully reconstructed images with minimal loss, achieving a mean squared error of 0.02 on the test dataset.
+            </p>
+
+            <section id="results-table">
+                <h2>Performance Metrics</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mean Squared Error</td>
+                            <td>0.02</td>
+                        </tr>
+                        <tr>
+                            <td>Reconstruction Accuracy</td>
+                            <td>98%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <!-- Discussion Section -->
+        <section id="discussion">
+            <h2>Discussion</h2>
+            <p>
+                The results demonstrate the effectiveness of the autoencoder for image compression. However, the model's performance could be improved by increasing the size of the training dataset and fine-tuning the hyperparameters.
+            </p>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                This project highlights the potential of autoencoders in dimensionality reduction and data reconstruction. Future work will focus on extending the model to handle larger datasets and exploring its application in anomaly detection.
+            </p>
+        </section>
+
+        <!-- References Section -->
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li>Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.</li>
+                <li>Chollet, F. (2018). Deep Learning with Python. Manning Publications.</li>
+                <li>TensorFlow Documentation: https://www.tensorflow.org/</li>
+            </ul>
+        </section>
+
+        <!-- Back to Blog Link -->
+        <footer>
+            <a href="../university-projects.html">Back to Blog</a>
+        </footer>
+    </main>
 
 </body>
 </html>
